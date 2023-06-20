@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 
+export const runtime = 'edge' // 'nodejs' is the default
 export async function POST(request:Request) {
     const res = await request.json(); // res now contains body
     const prompt = res.prompt;
