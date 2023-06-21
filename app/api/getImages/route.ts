@@ -1,4 +1,4 @@
-
+export const runtime = 'edge' // 'nodejs' is the default
 export async function GET(request:Request) {
     const response = await fetch('https://ai-image-generator-ytb-app.azurewebsites.net/api/getimages', {
         cache:"no-store"
